@@ -1,0 +1,104 @@
+
+*{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   text-align: center;
+   box-sizing: border-box;
+
+}
+body{
+    cursor: default;
+    background-image:url("pokemon dataset/go.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.search input,button{
+    margin-bottom: 40px
+}
+h1{
+    position: relative;
+    display: inline-block;
+    font-size: 2em;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+.pokemon-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 15px;
+
+}
+
+.search input,button{
+    margin: button 50px;
+}
+.card{
+    cursor: pointer;
+    width: 150px;
+    height: 210px;
+    border: 1px solid rgb(233, 214, 214);
+    background-color: rgba(255, 255, 255, 0.767);
+    transition: ease-in-out 0.5s;
+    box-shadow: 0 1px 10px rgb(44, 40, 40);
+}
+.card:hover{
+    background-color: pink;
+    box-shadow: 0 1px 15px rgba(15,65, 194, 0.608);
+    transition: ease-out .3s;
+    transform: scale(1.1);
+
+}
+
+.card img{
+    width: 150px;
+    padding: 15px;
+    filter: drop-shadow(0px 0px 10px cyan);
+}
+.card ul{
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    list-style: none;
+
+}
+.pokemon-id{
+    font-size: 10px;
+}
+.pokemon-name{
+    text-transform: capitalize;
+    color: navy;
+    font-weight: bold;
+}
+.pokemon-type span{
+color: white;
+font-size: 13px;
+}
+.card span{
+    margin: 1px;
+    padding: 2px 4px;
+    border-radius: 2px;
+    display: inline-block;
+}
+.FAIRY{background-color: rgb(204, 65, 121);}
+.FIRE{background-color: red;}
+.FIGHTING{background-color: blue;}
+.FLYING{background-color: chartreuse;}
+.NORMAL{background-color: darkorange;}
+.WATER{background-color: rgb(105, 97, 194);}
+.PSYCHIC{background-color: fuchsia;}
+.ELECTRIC{background-color: forestgreen;}
+.GROUND{background-color: lightcoral;}
+.ROCK{background-color: brown;}
+.GRASS{background-color: rgb(74, 123, 142);}
+.POISON{background-color: rgb(192, 133, 60);}
